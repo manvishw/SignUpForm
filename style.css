@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
 
 * {
   margin: 0px;
@@ -10,6 +11,7 @@ body {
   font-family: Inter;
   width: 100vw;
   height: 100vh;
+  display: flex;
 }
 
 .sidebar {
@@ -52,4 +54,110 @@ body {
     color: white;
     font-size: 14px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Side Bar Section Ends here  */
+
+/* Main Section Start Here  */
+
+.main{
+    width: 70%;
+    height: 100%;
+    background-color:  rgba(0, 0, 0, 0.021);
+}
+.main .text{
+    height: 20%;
+    display: flex;
+    font-family: New Amsterdam Static;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color: black;
+}
+
+.main form{
+    background-color: white;
+    padding: 10px;
+
+}
+fieldset{
+    border: none;
+    padding: 1rem;
+    gap: 10px;
+}
+
+#main-fieldset{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+   
+}
+
+#name-fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+#email-number-fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+#password-fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+#password-fieldset input{
+    border-color: #E5E7EB;
+}
+#password-fieldset input:invalid{
+    border-color: red;
+}
+
+input{
+    width: 150px;
+    padding: 2px;
+    border-color: #E5E7EB;
+}
+
+
+form .submittion{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+#phone-number:invalid{
+    border: 1px solid red;
+}
+.submittion input{
+    background-color:aqua;
+    font-size: 18px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+}
+.submittion input:hover{
+    cursor: pointer;
+}
+legend{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+}
+.instruction{
+    padding: 10px;
 }

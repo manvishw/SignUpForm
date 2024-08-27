@@ -18,6 +18,64 @@
         >
       </div>
     </div>
-    <div class="main"></div>
+    <div class="main">
+      <div class="text">
+        <p>This is not a Real Service!!</p>
+        <p>Signup Now to get Started.</p>
+      </div>
+      <form action="https://httpbin.org/post" method="post">
+        <div class="input">
+          <fieldset id="main-fieldset">
+            <legend>Signup Form</legend>
+            <fieldset id="name-fieldset">
+              <label for="first-name">First Name</label>
+              <input type="text" name="first-name" id="first-name" />
+              <label for="last-name">Last Name</label>
+              <input type="text" name="last-name" id="last-name" />
+            </fieldset>
+            <fieldset id="email-number-fieldset">
+              <label for="email">*Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="xyz@xyz.com"
+                pattern="/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g"
+                required
+              />
+
+              <label for="phone-number">Phone Number</label>
+              <input type="text" name="phone-number" placeholder="10 Digit Number" id="phone-number" pattern="^(0|91)?[6-9][0-9]{9}$"/>
+            </fieldset>
+            <fieldset id="password-fieldset">
+              <label for="password">*Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W]).{8,64})"
+              />
+
+              <label for="password">*Confirm Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W]).{8,64})"
+              />
+            </fieldset>
+          </fieldset>
+        </div>
+        <div class="submittion">
+          <input type="submit" value="Create Account" />
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </form>
+      <div class="instruction">
+        Password Guidelines:- Ensure that password is 8 to 64 characters long
+        and contains a mix of upper and lower case characters, one numeric and
+        one special character.
+      </div>
+    </div>
   </body>
 </html>
